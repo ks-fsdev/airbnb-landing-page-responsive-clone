@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airbnb Header Clone</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="media-query.css" />
+    <!--font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img class="logo-desktop" src="images\airbnb.svg" alt="air bnb logo" />
+      <img class="logo-tab" src="images\logo-tab.png" alt="logo air bnb" />
+
+      <div class="search-wrapper">
+        <div class="nav-pages">
+          <p>Homes</p>
+          <p>Experiences</p>
+        </div>
+        <div class="searchbar">
+          <div class="search">
+            <label>Where</label>
+            <input type="text" placeholder="Search Destination" />
+          </div>
+
+          <div class="border"></div>
+          <div class="search mob-view">
+            <label>Check in</label>
+            <input type="text" id="checkin" placeholder="Add dates" />
+          </div>
+          <div class="border"></div>
+
+          <div class="search mob-view">
+            <label>Check out</label>
+            <input type="text" id="checkout" placeholder="Add dates" />
+          </div>
+          <div class="border"></div>
+
+          <div class="search mob-view">
+            <label>Who</label>
+            <input type="text" placeholder="Add Guest" />
+          </div>
+          <button class="search-btn">
+            <img src="svg\search-icon.svg" alt="Search icon" />
+          </button>
+        </div>
+      </div>
+      <div class="header-buttons">
+        <button class="head-button-1">Airbnb your home</button>
+        <button class="head-button-2">
+          <img src="svg\globe.svg" alt="globe" />
+        </button>
+        <button class="head-button-3">
+          <img src="svg\hamburger-menu.svg" alt="menu" /><img
+            src="svg\profile.svg"
+            alt="profile"
+          />
+        </button>
+      </div>
+    </header>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="script.js"></script>
+</html>
