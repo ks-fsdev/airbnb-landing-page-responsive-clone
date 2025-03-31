@@ -3,6 +3,7 @@
   header {
     padding: 10px;
     width: 100%;
+    border: none;
   }
 
   .search-wrapper {
@@ -29,9 +30,13 @@
 
 /* TAB VIEW */
 @media (min-width: 745px) and (max-width: 949px) {
-  .logo-desktop {
-    width: 100%;
+  .logo-desktop,
+  .tab-view {
     display: none;
+  }
+
+  header {
+    padding-bottom: 10px;
   }
 
   .logo-tab {
@@ -52,10 +57,11 @@
     width: 35px;
     padding: 5px;
     height: auto;
+    align-self: center;
   }
 
   .head-button-2 img {
-    width: 100%;
+    width: 75%;
   }
 
   .head-button-3 {
