@@ -1,16 +1,18 @@
-// making on scroll menu
-window.addEventListener("scroll", function () {
-  let navbar = document.getElementById("navbar");
-  navbar.classList.toggle("shrink", window.scrollY > 50);
+const showMapBtn = document.querySelector(".show-map ");
 
-  if (navbar.classList.contains("shrink")) {
-    console.log("Shrink class added! ✅");
-  } else {
-    console.log("Shrink class removed! ❌");
-  }
+//detecting scroll
+document.addEventListener("DOMContentLoaded", function () {
+  var btnHideSeek = document.getElementById("btn-hideandseek");
+
+  window.addEventListener("scroll", function () {
+    var tarPos = btnHideSeek.getBoundingClientRect().top;
+
+    if (tarPos < window.innerHeight && tarPos > 0) {
+      showMapBtn.classList.add("disappear");
+      showMapBtn.classList.remove("appear");
+    } else {
+      showMapBtn.classList.remove("disappear");
+      showMapBtn.classList.add("appear");
+    }
+  });
 });
-
-//scrolling
-const scrollContainer = document.querySelector(".scroll-content");
-scrollContainer.scrollBy({ left: -200, behavior: "smooth" });
-scrollContainer.scrollBy({ left: 200, behavior: "smooth" });
