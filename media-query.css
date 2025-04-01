@@ -3,6 +3,7 @@
   header {
     width: 100%;
     border: none;
+    padding: 10px;
   }
 
   .search-wrapper {
@@ -148,6 +149,8 @@
     gap: 30px;
     padding: 5px;
     box-shadow: 0px 0px 5px 0px gray;
+    position: sticky;
+    bottom: 0px;
   }
 
   .navigation {
