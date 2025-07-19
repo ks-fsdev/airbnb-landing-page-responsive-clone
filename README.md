@@ -1,66 +1,122 @@
+<h1>🏠 Airbnb Clone — Responsive Landing Page</h1>
 
-<body>
+<p>
+  This is a front-end clone of the Airbnb landing page built using <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>.
+  The goal of this project was to practice layout replication, polish my understanding of the <strong>box model</strong>, create a <strong>responsive UI</strong>, and implement dynamic behavior using <strong>DOM manipulation</strong>.
+</p>
 
-  <h1>🏠 Airbnb Landing Page Clone</h1>
+<hr />
 
-  <p>
-    A pixel-perfect, fully responsive clone of the Airbnb landing page built using just
-    <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>.
-    This is a front-end-only project built to mimic the visual feel of Airbnb’s homepage.
-  </p>
+<h2>🔗 Live Demo</h2>
+<p>
+  <a href="https://ks-fsdev.github.io/airbnb-landing-page-responsive-clone/" target="_blank">
+    View Live Project
+  </a>
+  <br />
+  ⚠️ <em>Note: Some browsers (like Chrome) may show a security warning. This is just a personal project hosted via GitHub Pages and is completely safe.</em>
+</p>
 
-  <h2>🚀 Live Demo</h2>
-  <p>
-    👉 <a href="https://ks-fsdev.github.io/airbnb-landing-page-responsive-clone/" target="_blank">
-      Click here to view the live demo
-    </a>
-  </p>
+<hr />
 
-  <h2>🛠️ Tech Stack</h2>
-  <ul>
-    <li><strong>HTML5</strong> – Semantic structure</li>
-    <li><strong>CSS3</strong> – Flexbox, Grid, and media queries for responsiveness</li>
-    <li><strong>JavaScript (Vanilla)</strong> – DOM manipulation, interactivity</li>
-  </ul>
+<h2>🧠 What I Practiced</h2>
+<ul>
+  <li>Recreating a complex landing page layout from scratch</li>
+  <li>Advanced CSS Box Model understanding</li>
+  <li>Responsive Design for Desktop, Tablet, and Mobile</li>
+  <li>Building a dynamic header that adapts across screen sizes</li>
+  <li>DOM manipulation using JavaScript (scroll-based button animation)</li>
+</ul>
 
-  <h2>🌟 Key Features</h2>
-  <ul>
-    <li>Fully responsive design across devices</li>
-    <li>Custom header with a logo, search, and navigation links</li>
-    <li>Interactive elements powered by JavaScript</li>
-    <li>Image sections and grid-based layout mimicking Airbnb</li>
-  </ul>
+<hr />
 
-  <h2>⚙️ How to Use</h2>
-  <ol>
-    <li>Clone this repository:
-      <pre>git clone https://github.com/ks-fsdev/airbnb-landing-page-responsive-clone</pre>
-    </li>
-    <li>Open <code>index.html</code> in any browser</li>
-    <li>No dependencies needed — it’s pure front-end!</li>
-  </ol>
+<h2>⚙️ Feature Highlight</h2>
+<p>
+  One feature includes a button that dynamically disappears or appears based on scroll position, using JavaScript:
+</p>
 
-  <h2>🎯 Learning Goals</h2>
-  <ul>
-    <li>Master responsive layouts using Flexbox & Grid</li>
-    <li>Improve HTML/CSS structure by cloning a real-world UI</li>
-    <li>Strengthen JavaScript fundamentals (events, DOM)</li>
-  </ul>
+<pre><code>
+window.addEventListener("scroll", function () {
+  var tarPos = btnHideSeek.getBoundingClientRect().top;
 
-  <h2>📝 License</h2>
-  <p>This project is open-sourced under the <strong>MIT License</strong>. Use it, learn from it, remix it!</p>
+  if (tarPos &lt; window.innerHeight &amp;&amp; tarPos &gt; 0) {
+    showMapBtn.classList.add("disappear");
+    showMapBtn.classList.remove("appear");
+  } else {
+    showMapBtn.classList.remove("disappear");
+    showMapBtn.classList.add("appear");
+  }
+});
+</code></pre>
 
-  <h2>💬 Feedback</h2>
-  <p>
-    Feel free to open issues or pull requests on 
-    <a href="https://github.com/ks-fsdev/airbnb-landing-page-responsive-clone" target="_blank">
-      the GitHub repo
-    </a>.
-  </p>
+<p>This added interactivity and polish to the UI.</p>
 
-  <hr />
-  <p style="font-style: italic;">
-    Designed with 💻 by Khushi (ks-fsdev)
-  </p>
+<hr />
 
-</body>
+<h2>📁 Folder & File Structure</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>File/Folder</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>index.html</code></td>
+      <td>Main structure of the landing page</td>
+    </tr>
+    <tr>
+      <td><code>style.css</code></td>
+      <td>All layout, responsiveness, and visual styling</td>
+    </tr>
+    <tr>
+      <td><code>script.js</code></td>
+      <td>JavaScript functionality like scroll detection</td>
+    </tr>
+    <tr>
+      <td><code>images/</code></td>
+      <td>All visual assets (hero images, UI images)</td>
+    </tr>
+    <tr>
+      <td><code>svg/</code></td>
+      <td>SVG icons used throughout the layout</td>
+    </tr>
+    <tr>
+      <td><code>ss/</code></td>
+      <td>Screen recording GIFs for showcasing the project</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2>📸 Demo Previews</h2>
+
+<p><strong>Desktop View</strong></p>
+<img src="ss/landing-page.gif" alt="Desktop View" width="500" />
+
+<p><strong>Responsive Design</strong></p>
+<img src="ss/responsive-design.gif" alt="Responsive Design" width="500" />
+
+<p><strong>Tab View</strong></p>
+<img src="ss/tab-view.gif" alt="Mobile View" width="300" />
+
+<p><strong>Mobile View</strong></p>
+<img src="ss/mobile view.gif" alt="Mobile View" width="300" />
+
+<hr />
+
+<h2>🛠️ Technologies Used</h2>
+<ul>
+  <li>HTML5</li>
+  <li>CSS3 (Responsive Design, Flexbox, Media Queries)</li>
+  <li>JavaScript (Vanilla JS, DOM methods, scroll detection)</li>
+</ul>
+
+<hr />
+
+<h2>About Me</h2>
+<p>
+  I built this project to sharpen my layout skills by replicating a real-world product. It helped me better understand responsiveness, JavaScript-based UI logic, and how to structure front-end code in a professional way.
+</p>
